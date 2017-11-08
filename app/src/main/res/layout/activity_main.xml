@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.yinshuai.imageeditext.MainActivity">
+
+    <com.example.yinshuai.imageeditext.view.EditTextPlus
+        android:id="@+id/edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@null"
+        android:layout_above="@+id/functionBar"/>
+
+    <RelativeLayout
+        android:id="@+id/functionBar"
+        android:layout_width="match_parent"
+        android:layout_height="47dp"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/white">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#bfbfbf" />
+
+        <ImageView
+            android:id="@+id/addimage"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/addimage" />
+
+        <Button
+            android:id="@+id/getimage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="获取插入的图片集合" />
+    </RelativeLayout>
+</RelativeLayout>
